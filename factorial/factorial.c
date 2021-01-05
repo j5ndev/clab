@@ -39,7 +39,5 @@ int validateInput(int argc, char *argv[]) {
         puts("Negative integers are not allowed.");
         exit(1);
     }
-    uintmax_t value = strtoumax(argv[1], NULL, 10);
-
-    return value;
+    return atoi(argv[1]);
 }
