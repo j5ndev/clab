@@ -20,10 +20,10 @@ uintmax_t factorial(uintmax_t value) {
     if (value < 2) {
         return 1;
     }
-    uintmax_t counter = value;
+    uintmax_t counter = value -1;
     uintmax_t result = value;
     while (counter > 1) {
-        result = result * (counter - 1);
+        result = result * counter;
         counter--;
     }
     return result;
